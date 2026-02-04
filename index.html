@@ -1,0 +1,587 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Futuristic Multimedia Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Custom Cursor Elements -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+                <span class="brand-icon">V</span> VISIONARY
+            </a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#work">WORKS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">ABOUT</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">EXPERTISE</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#studio">STUDIO</a></li>
+                </ul>
+            </div>
+            <a href="#contact" class="btn btn-outline-light rounded-pill px-4 btn-sm d-none d-lg-block">Let's Talk</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section d-flex align-items-center text-center">
+        <!-- Background Image -->
+        <div class="hero-bg" style="background-image: url('images/hero-bg.png'); background-size: cover; background-position: center;"></div>
+
+        <div class="container position-relative z-2">
+            
+            <!-- Floating Card (Left Side) -->
+            <div class="floating-ui-card d-none d-xl-block animate-on-scroll delay-500">
+                <div class="loader-ring"></div>
+            </div>
+
+            <!-- Floating Card (Right Side) -->
+            <div class="floating-ui-card-right d-none d-xl-block animate-on-scroll delay-500">
+                <div class="ui-bar w-75"></div>
+                <div class="ui-bar w-50" style="background: var(--accent-purple); opacity: 0.5"></div>
+                <div class="ui-squares">
+                    <div class="ui-square sq-1"></div>
+                    <div class="ui-square sq-2"></div>
+                    <div class="ui-square sq-3"></div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-10 animate-on-scroll">
+                    
+                    <!-- Badge -->
+                    <div class="mb-4 d-inline-block">
+                        <span class="badge-pill">MULTIDISCIPLINARY DESIGNER</span>
+                    </div>
+
+                    <h1 class="display-1 fw-bold mb-4 hero-title">
+                        Designing <br />
+                        <span class="text-gradient">Experiences</span> That <br />
+                        Move People.
+                    </h1>
+                    <p class="lead text-secondary mb-5 mx-auto delay-100 animate-on-scroll hero-subtitle">
+                        UI/UX, Visual Design, Motion. Stories in Motion. I craft high-end digital products that blend technical precision with emotional storytelling.
+                    </p>
+                    <div class="d-flex justify-content-center gap-3 delay-200 animate-on-scroll">
+                        <button class="btn btn-white rounded-pill px-5 py-3 fw-bold">View Work</button>
+                        <button class="btn btn-outline-light rounded-pill px-5 py-3 fw-bold">Let's Collaborate</button>
+                    </div>
+
+                    <div class="mt-5 pt-5 opacity-50 small tracking-widest animate-on-scroll delay-300">
+                        SCROLL TO EXPLORE
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Creative Story Section -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Image Column -->
+                <div class="col-lg-5 mb-5 mb-lg-0 slide-in-left">
+                    <div class="image-wrapper rounded-5 overflow-hidden position-relative hero-portrait">
+                        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=800" alt="Creative Portrait" class="img-fluid w-100 grayscale-img">
+                        
+                        <!-- Floating Quote Card -->
+                        <div class="quote-card-overlay position-absolute p-4">
+                            <p class="text-white mb-0 fst-italic small">
+                                "I don't just design screens. I design emotions, movement, and meaning."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content Column -->
+                <div class="col-lg-5 offset-lg-1 slide-in-right">
+                    <h2 class="mb-4 display-5 fw-bold">The Creative Story</h2>
+                    <p class="text-secondary mb-5 leading-relaxed">
+                        From interfaces that guide users, to visuals that stop scrolling, to motion that tells stories — every pixel serves a purpose. I bridge the gap between human psychology and digital aesthetics to create memorable experiences.
+                    </p>
+
+                    <h6 class="text-uppercase text-secondary tracking-widest small mb-4">TIMELINE</h6>
+
+                    <div class="custom-timeline position-relative">
+                        
+                        <div class="timeline-row mb-4 animate-on-scroll delay-200">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="text-gradient fw-bold">2019</span>
+                                <h6 class="text-white mt-1">Founded "Pixel Lab" creative collective</h6>
+                            </div>
+                        </div>
+
+                        <div class="timeline-row mb-4 animate-on-scroll delay-300">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="text-gradient fw-bold">2021</span>
+                                <h6 class="text-white mt-1">Senior UI Designer at TechVision Inc.</h6>
+                            </div>
+                        </div>
+
+                        <div class="timeline-row mb-4 animate-on-scroll delay-400">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="text-gradient fw-bold">2023</span>
+                                <h6 class="text-white mt-1">Global Design Award for "EcoFlow" Motion Branding</h6>
+                            </div>
+                        </div>
+
+                        <div class="timeline-row animate-on-scroll delay-500">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="text-gradient fw-bold">Present</span>
+                                <h6 class="text-white mt-1">Independent Creative Director</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Mastery (Services) -->
+    <section id="services" class="section-padding">
+        <div class="container">
+            <div class="text-center mb-5 animate-on-scroll">
+                <h2 class="display-5 fw-bold mb-3">Technical Mastery</h2>
+                <p class="text-secondary" style="max-width: 600px; margin: 0 auto;">
+                    A comprehensive toolkit designed for the modern digital landscape, merging aesthetics with functional excellence.
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Row 1 -->
+                <div class="col-md-6 col-lg-3 animate-on-scroll delay-100">
+                    <div class="service-card p-4 rounded-4 h-100 hover-target">
+                        <i class="bi bi-layout-wtf fs-2 mb-3 d-inline-block service-icon"></i>
+                        <h5 class="fw-bold mb-2">UI/UX Design</h5>
+                        <p class="text-secondary small mb-0">User-centric interfaces with seamless flow.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 animate-on-scroll delay-200">
+                    <div class="service-card p-4 rounded-4 h-100 hover-target">
+                        <i class="bi bi-cursor fs-2 mb-3 d-inline-block service-icon"></i>
+                        <h5 class="fw-bold mb-2">Mobile App Design</h5>
+                        <p class="text-secondary small mb-0">Native iOS & Android experiences.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 animate-on-scroll delay-300">
+                    <div class="service-card p-4 rounded-4 h-100 hover-target">
+                        <i class="bi bi-cpu fs-2 mb-3 d-inline-block service-icon"></i>
+                        <h5 class="fw-bold mb-2">Dashboard Systems</h5>
+                        <p class="text-secondary small mb-0">Data visualization and complex workflows.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 animate-on-scroll delay-400">
+                    <div class="service-card p-4 rounded-4 h-100 hover-target">
+                        <i class="bi bi-layers fs-2 mb-3 d-inline-block service-icon"></i>
+                        <h5 class="fw-bold mb-2">Brand Identity</h5>
+                        <p class="text-secondary small mb-0">Visual storytelling and brand systems.</p>
+                    </div>
+                </div>
+
+                <!-- Row 2 -->
+                <div class="col-md-6 col-lg-3 animate-on-scroll delay-100">
+                    <div class="service-card p-4 rounded-4 h-100 hover-target">
+                        <i class="bi bi-play-circle fs-2 mb-3 d-inline-block service-icon"></i>
+                        <h5 class="fw-bold mb-2">Motion Graphics</h5>
+                        <p class="text-secondary small mb-0">Dynamic animations that bring brands to life.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 animate-on-scroll delay-200">
+                    <div class="service-card p-4 rounded-4 h-100 hover-target">
+                        <i class="bi bi-film fs-2 mb-3 d-inline-block service-icon"></i>
+                        <h5 class="fw-bold mb-2">Video Editing</h5>
+                        <p class="text-secondary small mb-0">Cinematic storytelling and production.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 animate-on-scroll delay-300">
+                    <div class="service-card p-4 rounded-4 h-100 hover-target">
+                        <i class="bi bi-box fs-2 mb-3 d-inline-block service-icon"></i>
+                        <h5 class="fw-bold mb-2">3D & AI Art</h5>
+                        <p class="text-secondary small mb-0">Exploring the future of visual creation.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 animate-on-scroll delay-400">
+                    <div class="service-card p-4 rounded-4 h-100 hover-target">
+                        <i class="bi bi-lightning-charge fs-2 mb-3 d-inline-block service-icon"></i>
+                        <h5 class="fw-bold mb-2">Web Development</h5>
+                        <p class="text-secondary small mb-0">Bringing designs to life with code.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="work" class="section-padding">
+      <div class="container">
+        <!-- Project 1 -->
+        <div class="row align-items-center mb-5 project-row animate-on-scroll">
+          <div class="col-lg-5 mb-4 mb-lg-0">
+            <div class="project-info">
+              <span class="text-uppercase small text-secondary tracking-widest"
+                >SaaS / Dashboard</span
+              >
+              <h2 class="display-5 fw-bold mt-2">
+                NEON <br />
+                DASHBOARD
+              </h2>
+              <p class="text-secondary mt-3">
+                A high-performance trading interface for the next generation of
+                digital assets.
+              </p>
+              <a
+                href="#"
+                class="btn btn-link text-white p-0 text-decoration-none mt-3"
+                >VIEW CASE STUDY <i class="bi bi-arrow-right ms-1"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="project-image rounded-4 overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800"
+                class="img-fluid w-100"
+                alt="Neon Dashboard"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 (Reversed) -->
+        <div
+          class="row align-items-center mb-5 project-row flex-lg-row-reverse animate-on-scroll"
+        >
+          <div class="col-lg-5 mb-4 mb-lg-0 ps-lg-5">
+            <div class="project-info">
+              <span class="text-uppercase small text-secondary tracking-widest"
+                >Mobile / iOS</span
+              >
+              <h2 class="display-5 fw-bold mt-2">LUMINA MOBILE</h2>
+              <p class="text-secondary mt-3">
+                Redefining the wellness experience with fluid interactions and
+                organic visuals.
+              </p>
+              <a
+                href="#"
+                class="btn btn-link text-white p-0 text-decoration-none mt-3"
+                >VIEW CASE STUDY <i class="bi bi-arrow-right ms-1"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="project-image rounded-4 overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&q=80&w=800"
+                class="img-fluid w-100"
+                alt="Lumina Mobile"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="row align-items-center project-row animate-on-scroll">
+          <div class="col-lg-5 mb-4 mb-lg-0">
+            <div class="project-info">
+              <span class="text-uppercase small text-secondary tracking-widest"
+                >Motion / Branding</span
+              >
+              <h2 class="display-5 fw-bold mt-2">KINETIC BRAND</h2>
+              <p class="text-secondary mt-3">
+                A dynamic identity system that evolves based on user
+                interaction.
+              </p>
+              <a
+                href="#"
+                class="btn btn-link text-white p-0 text-decoration-none mt-3"
+                >VIEW CASE STUDY <i class="bi bi-arrow-right ms-1"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="project-image rounded-4 overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&q=80&w=800"
+                class="img-fluid w-100"
+                alt="Kinetic Brand"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Motion & Video -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-end mb-5">
+          <div>
+            <h2 class="mb-2">Motion & Video</h2>
+            <p class="text-secondary mb-0 small">
+              Showreels and walkthroughs demonstrating motion & interactivity.
+            </p>
+          </div>
+          <div class="d-none d-md-block">
+            <span class="me-3 text-white">ALL</span>
+            <span class="me-3 text-secondary">COMMERCIAL</span>
+            <span class="me-3 text-secondary">MUSIC</span>
+            <span class="text-secondary">UI/UX</span>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-4 animate-on-scroll">
+            <div class="video-card position-relative rounded-4 overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1626544827763-d516dce335ca?auto=format&fit=crop&q=80&w=500"
+                class="img-fluid w-100"
+                alt="Video"
+              />
+              <div
+                class="overlay d-flex align-items-center justify-content-center"
+              >
+                <i class="bi bi-play-circle-fill fs-1 text-white"></i>
+              </div>
+              <div
+                class="video-info position-absolute bottom-0 start-0 p-3 w-100"
+              >
+                <p class="text-success small mb-0">Showreel</p>
+                <h6 class="text-white">Brand Motion 2025</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 animate-on-scroll delay-100">
+            <div class="video-card position-relative rounded-4 overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=500"
+                class="img-fluid w-100"
+                alt="Video"
+              />
+              <div
+                class="overlay d-flex align-items-center justify-content-center"
+              >
+                <i class="bi bi-play-circle-fill fs-1 text-white"></i>
+              </div>
+              <div
+                class="video-info position-absolute bottom-0 start-0 p-3 w-100"
+              >
+                <p class="text-info small mb-0">Interface</p>
+                <h6 class="text-white">UI Interaction concept</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 animate-on-scroll delay-200">
+            <div class="video-card position-relative rounded-4 overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1536240478700-b869070f9279?auto=format&fit=crop&q=80&w=500"
+                class="img-fluid w-100"
+                alt="Video"
+              />
+              <div
+                class="overlay d-flex align-items-center justify-content-center"
+              >
+                <i class="bi bi-play-circle-fill fs-1 text-white"></i>
+              </div>
+              <div
+                class="video-info position-absolute bottom-0 start-0 p-3 w-100"
+              >
+                <p class="text-warning small mb-0">Film</p>
+                <h6 class="text-white">Cinematic Storytelling</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quote Section -->
+    <section class="section-padding text-center">
+      <div class="container animate-on-scroll">
+        <h2 class="display-4 fw-bold mb-3">
+          "Good Design is Invisible.<br /><span class="text-secondary"
+            >Great Design is Felt."</span
+          >
+        </h2>
+        <p class="small text-secondary mt-4">
+          Design is not just visual. It's personality, connection, and strategy.
+        </p>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section-padding bg-darker">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h6 class="text-uppercase text-secondary tracking-widest small">
+            COLLABORATION STORY
+          </h6>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4 animate-on-scroll">
+            <div class="testimonial-card p-4 rounded-4 h-100 bg-secondary-dark">
+              <p class="text-secondary mb-4">
+                "Working with MINIMUM was a game changer. The product finally
+                feels like the premium experience we envisioned."
+              </p>
+              <h6 class="mb-0">Sarah Jenkins</h6>
+              <small class="text-secondary">CTO, FinTech</small>
+            </div>
+          </div>
+          <div class="col-md-4 animate-on-scroll delay-100">
+            <div class="testimonial-card p-4 rounded-4 h-100 bg-secondary-dark">
+              <p class="text-secondary mb-4">
+                "The attention to detail in motion graphics is unparalleled.
+                They don't just animate, they tell a story."
+              </p>
+              <h6 class="mb-0">Marcello Rossi</h6>
+              <small class="text-secondary">Director, Studio One</small>
+            </div>
+          </div>
+          <div class="col-md-4 animate-on-scroll delay-200">
+            <div class="testimonial-card p-4 rounded-4 h-100 bg-secondary-dark">
+              <p class="text-secondary mb-4">
+                "A true partner that understands not only design, but the
+                underlying business goals. Simply elite work."
+              </p>
+              <h6 class="mb-0">Elena Moore</h6>
+              <small class="text-secondary">Founder, EcoFlow</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer / Contact -->
+    <section id="contact" class="section-padding pb-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 mb-5 mb-lg-0 animate-on-scroll">
+            <h2 class="display-4 fw-bold mb-3">
+              Let's turn <br />
+              ideas into <br />
+              <span class="text-gradient-blue">experiences.</span>
+            </h2>
+            <p class="text-secondary mb-5">
+              Currently available for selected projects and collaborations.
+              Let's build something extraordinary together.
+            </p>
+
+            <div class="d-flex gap-4">
+              <a href="#" class="text-secondary fs-5"
+                ><i class="bi bi-dribbble"></i
+              ></a>
+              <a href="#" class="text-secondary fs-5"
+                ><i class="bi bi-twitter-x"></i
+              ></a>
+              <a href="#" class="text-secondary fs-5"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a href="#" class="text-secondary fs-5"
+                ><i class="bi bi-linkedin"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-lg-5 offset-lg-1 animate-on-scroll delay-100">
+            <form
+              class="contact-form p-4 rounded-4 border border-secondary border-opacity-25"
+            >
+              <div class="mb-3">
+                <label class="form-label text-secondary small">FULL NAME</label>
+                <input
+                  type="text"
+                  class="form-control bg-transparent text-white border-secondary"
+                  placeholder="John Doe"
+                />
+              </div>
+              <div class="mb-3">
+                <label class="form-label text-secondary small"
+                  >EMAIL ADDRESS</label
+                >
+                <input
+                  type="email"
+                  class="form-control bg-transparent text-white border-secondary"
+                  placeholder="hello@example.com"
+                />
+              </div>
+              <div class="mb-4">
+                <label class="form-label text-secondary small">MESSAGE</label>
+                <textarea
+                  class="form-control bg-transparent text-white border-secondary"
+                  rows="4"
+                  placeholder="Tell me about your project..."
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="btn btn-primary w-100 rounded-pill py-2 gradient-btn border-0"
+              >
+                Send Message <i class="bi bi-arrow-right ms-2"></i>
+              </button>
+            </form>
+
+            <div
+              class="d-flex justify-content-between mt-5 pt-4 text-secondary small border-top border-secondary border-opacity-10"
+            >
+              <span>© 2026 MINIMUM. Made with distinction.</span>
+              <div class="d-flex gap-3">
+                <a href="#" class="text-secondary text-decoration-none"
+                  >Privacy</a
+                >
+                <a href="#" class="text-secondary text-decoration-none"
+                  >Terms</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/cursor.js"></script>
+  </body>
+</html>
